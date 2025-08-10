@@ -32,8 +32,12 @@ body {
   height: 70px;
 }
 
+.logo h2 {
+  color: #004aad;
+}
+
 .logo span {
-  color: green;
+  color: #34ad00;
 }
 
 .nav-links a {
@@ -63,13 +67,20 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
     font-weight: 700;
     line-height: 1;
+    margin-bottom: 1rem;
 }
 
 .hero-text h1 span {
-  color: rgb(7, 89, 240);
+  color: #004aad;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .hero-image img {
@@ -79,14 +90,21 @@ body {
 
 /* Buttons */
 .btn-primary {
-  background: #0d6efd;
+  background: #004aad;
   color: #fff;
   padding: 12px 20px;
   border: none;
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
+
+.btn-primary:hover {
+  background-color: #3f6ca7;
+}
+
 .btn-secondary {
   background: #eee;
   color: #333;
@@ -94,6 +112,12 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.btn-secondary:hover {
+  background-color: #f5f7f9;
 }
 
 /* 5. Services Section */
@@ -206,7 +230,7 @@ body {
 .blog-cards a {
   margin: 10px 20px 20px;
   font-size: 0.9rem;
-  color: #0d6efd;
+  color: #004aad;
   text-decoration: none;
 }
 
@@ -299,7 +323,8 @@ body {
 
 /* 8.Call To Action Section */
 .call-to-action {
-  background-color: #0d6efd;
+  background-color: #004aad;
+  padding: 80px 0;
 }
 
 .call-to-action .container {
@@ -309,9 +334,49 @@ body {
   color: white;
 }
 
+.call-to-action h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.call-to-action p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn1 {
+  background: #fff;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta-btn2 {
+  background: #fff;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 /* 9.Footer */
 .footer {
   background-color: #f5f8fc;
+  padding: 80px 0;
 }
 
 .footer-content {
@@ -320,19 +385,92 @@ body {
   flex-wrap: wrap;
 }
 
+.footer-left h3 {
+  color: #004aad;
+}
+
+.footer-left h3 span {
+  color: #34ad00;
+}
+
 .footer-left img{
   width: 40px;
   height: 40px;
+  background-color: #E2E8F0;
   border-radius: 50%;
-  background-color: #ccc;
   padding: 5px;
 }
 
 .footer-center a {
   display: block;
+  text-decoration: none;
+  color: #004aad;
 }
 
 .footer-right a {
   display: block;
+  text-decoration: none;
+  color: #004aad;
 }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px rgb(48, 47, 47);
+}
+
+
+@media (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    margin-bottom: 5px;
+  }
+
+  .hero-text p {
+    margin-bottom: 5px;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    padding: 12px 20px;
+    margin-right: 0;
+  }
+  .btn-secondary {
+    padding: 12px 20px;
+    border: solid ;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+    border-radius: 10px;
+  }
+
+  .blog-intro-container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
